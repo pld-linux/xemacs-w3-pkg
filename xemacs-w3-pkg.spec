@@ -10,12 +10,13 @@ Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	088e276b855e95b2032aa58160ffeba2
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
-BuildArch:	noarch
+BuildRequires:	texinfo
 Requires:	xemacs
-Requires:	xemacs-mail-lib-pkg
 Requires:	xemacs-base-pkg
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Requires:	xemacs-mail-lib-pkg
 Conflicts:	xemacs-sumo
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Emacs/W3 provides some core functionality that can be readily re-used
@@ -67,7 +68,7 @@ rm -fr $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc lisp/w3/{README.VMS,README,INSTALL,ChangeLog}
-%{_datadir}/xemacs-packages%{_sysconfdir}/*
-%{_infodir}/*
+%{_datadir}/xemacs-packages/etc/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
+%{_infodir}/*.info*

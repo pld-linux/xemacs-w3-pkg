@@ -2,12 +2,12 @@ Summary:	[X]Emacs/W3 World Wide Web browser
 Summary(pl):	Przegl±darka WWW pod [X]Emacsa
 Name:		xemacs-w3-pkg
 %define 	srcname	w3
-Version:	1.26
+Version:	1.29
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	bd89b7baa8483885789b939bbf6e75b1
+# Source0-md5:	088e276b855e95b2032aa58160ffeba2
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch

@@ -2,7 +2,7 @@ Summary:	[X]Emacs/W3 World Wide Web browser
 Summary(pl):	Przegl±darka WWW pod [X]Emacsa
 Name:		xemacs-w3-pkg
 %define 	srcname	w3
-Version:	1.22
+Version:	1.23
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs

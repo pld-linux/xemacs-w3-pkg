@@ -1,26 +1,34 @@
-Summary:	A Web browser
-Summary(pl):	A Web browser
+Summary:	[X]Emacs/W3 World Wide Web browser
+Summary(pl):	Przegl±darka WWW pod [X]Emacsa
 Name:		xemacs-w3-pkg
 %define 	srcname	w3
 Version:	1.18
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-w3-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
-Conflicts:	xemacs-sumo
 Requires:	xemacs
 Requires:	xemacs-w3-pkg
 Requires:	xemacs-mail-lib-pkg
 Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Conflicts:	xemacs-sumo
 
 %description
+Emacs/W3 provides some core functionality that can be readily re-used
+from any program in Emacs. Users and other package writers are
+encouraged to @i{Web-enable} their applications and daily work
+routines with the library.
 
-%description -l pl 
+Emacs/W3 is completely customizable, both from Emacs-Lisp and from
+stylesheets @xref{Stylesheets}. If there is any aspect of Emacs/W3
+that cannot be modified to your satisfaction, please send mail to the
+@t{w3-beta@@xemacs.org} mailing list with any suggestions.
 
 %prep
 %setup -q -c
@@ -37,8 +45,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/w3/README.VMS lisp/w3/README.NT lisp/w3/README lisp/w3/INSTALL lisp/w3/ChangeLog 
+gzip -9nf lisp/w3/{README.VMS,README,INSTALL,ChangeLog}
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -51,7 +58,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/w3/README.VMS.gz lisp/w3/README.NT.gz lisp/w3/README.gz lisp/w3/INSTALL.gz lisp/w3/ChangeLog.gz 
+%doc lisp/w3/*.gz
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*

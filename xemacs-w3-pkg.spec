@@ -3,7 +3,7 @@ Summary(pl):	Przegl±darka WWW pod [X]Emacsa
 Name:		xemacs-w3-pkg
 %define 	srcname	w3
 Version:	1.20
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Group(de):	Applikationen/Editors/Emacs
@@ -22,13 +22,21 @@ Conflicts:	xemacs-sumo
 %description
 Emacs/W3 provides some core functionality that can be readily re-used
 from any program in Emacs. Users and other package writers are
-encouraged to @i{Web-enable} their applications and daily work
-routines with the library.
+encouraged to Web-enable their applications and daily work routines
+with the library.
 
 Emacs/W3 is completely customizable, both from Emacs-Lisp and from
-stylesheets @xref{Stylesheets}. If there is any aspect of Emacs/W3
-that cannot be modified to your satisfaction, please send mail to the
-@t{w3-beta@@xemacs.org} mailing list with any suggestions.
+stylesheets. If there is any aspect of Emacs/W3 that cannot be
+modified to your satisfaction, please send mail to the
+w3-beta@@xemacs.org mailing list with any suggestions.
+
+%description -l pl
+Emacs/W3 dodaje podstawow± funkcjonalno¶æ, która mo¿e byæ u¿ywana
+przez dowolny program w Emacsie. U¿ytkownicy i autorzy innych pakietów
+s± zachêcani do @i{Web-enable} swoich aplikacji.
+
+Emacs/W3 jest ca³kowicie konfigurowalny, zarówno z Emacs-Lispa jak i
+styli.
 
 %prep
 %setup -q -c

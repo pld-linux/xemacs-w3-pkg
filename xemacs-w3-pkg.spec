@@ -11,7 +11,6 @@ Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Requires:	xemacs
-Requires:	xemacs-w3-pkg
 Requires:	xemacs-mail-lib-pkg
 Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

@@ -2,7 +2,7 @@ Summary:	A Web browser
 Summary(pl):	A Web browser
 Name:		xemacs-w3-pkg
 %define 	srcname	w3
-Version:	1.16
+Version:	1.18
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs

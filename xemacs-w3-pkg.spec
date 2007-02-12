@@ -1,5 +1,5 @@
 Summary:	[X]Emacs/W3 World Wide Web browser
-Summary(pl.UTF-8):   Przeglądarka WWW pod [X]Emacsa
+Summary(pl.UTF-8):	Przeglądarka WWW pod [X]Emacsa
 Name:		xemacs-w3-pkg
 %define 	srcname	w3
 Version:	1.29

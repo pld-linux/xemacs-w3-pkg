@@ -1,5 +1,5 @@
 Summary:	[X]Emacs/W3 World Wide Web browser
-Summary(pl):	Przegl±darka WWW pod [X]Emacsa
+Summary(pl.UTF-8):   PrzeglÄ…darka WWW pod [X]Emacsa
 Name:		xemacs-w3-pkg
 %define 	srcname	w3
 Version:	1.29
@@ -29,12 +29,12 @@ stylesheets. If there is any aspect of Emacs/W3 that cannot be
 modified to your satisfaction, please send mail to the
 w3-beta@@xemacs.org mailing list with any suggestions.
 
-%description -l pl
-Emacs/W3 dodaje podstawow± funkcjonalno¶æ, która mo¿e byæ u¿ywana
-przez dowolny program w Emacsie. U¿ytkownicy i autorzy innych pakietów
-s± zachêcani do @i{Web-enable} swoich aplikacji.
+%description -l pl.UTF-8
+Emacs/W3 dodaje podstawowÄ… funkcjonalnoÅ›Ä‡, ktÃ³ra moÅ¼e byÄ‡ uÅ¼ywana
+przez dowolny program w Emacsie. UÅ¼ytkownicy i autorzy innych pakietÃ³w
+sÄ… zachÄ™cani do @i{Web-enable} swoich aplikacji.
 
-Emacs/W3 jest ca³kowicie konfigurowalny, zarówno z Emacs-Lispa jak i
+Emacs/W3 jest caÅ‚kowicie konfigurowalny, zarÃ³wno z Emacs-Lispa jak i
 styli.
 
 %prep

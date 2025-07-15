@@ -39,7 +39,7 @@ styli.
 
 %prep
 %setup -q -c
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 cd man/w3

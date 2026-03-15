@@ -1,7 +1,6 @@
-diff -Nur xemacs-w3-pkg-1.15/man/w3/w3-faq.txi xemacs-w3-pkg-1.15.new/man/w3/w3-faq.txi
---- xemacs-w3-pkg-1.15/man/w3/w3-faq.txi	Sat Nov 27 16:37:21 1999
-+++ xemacs-w3-pkg-1.15.new/man/w3/w3-faq.txi	Sun Mar 26 14:44:27 2000
-@@ -1,12 +1,18 @@
+--- a/man/w3/w3-faq.txi	2018-07-29 12:01:46.000000000 +0200
++++ b/man/w3/w3-faq.txi	2026-03-15 22:16:35.783441769 +0100
+@@ -1,12 +1,17 @@
  \input texinfo
  @c -*-texinfo-*-
  @c Copyright (C) 1997 Free Software Foundation, Inc.
@@ -10,13 +9,12 @@ diff -Nur xemacs-w3-pkg-1.15/man/w3/w3-faq.txi xemacs-w3-pkg-1.15.new/man/w3/w3-
 -@dircategory GNU Emacs Lisp
 +@setfilename ../../info/w3-faq.info
 +
-+
 +@ifinfo
 +@format
 +@dircategory XEmacs Editor:
  @direntry
 -* Emacs/W3 FAQ: (w3-faq).          FAQ for Emacs/W3 World Wide Web browser.
-+* Emacs/W3 FAQ: (w3-faq). 	        FAQ for Emacs/W3 World Wide Web browser.
++* Emacs/W3 FAQ: (w3-faq).	FAQ for Emacs/W3 World Wide Web browser.
  @end direntry
 +@end format
 +@end ifinfo
@@ -24,38 +22,35 @@ diff -Nur xemacs-w3-pkg-1.15/man/w3/w3-faq.txi xemacs-w3-pkg-1.15.new/man/w3/w3-
  
  @node Top, Installation FAQ, (dir), (dir)
  @section Frequently Asked Questions
-diff -Nur xemacs-w3-pkg-1.15/man/w3/w3.txi xemacs-w3-pkg-1.15.new/man/w3/w3.txi
---- xemacs-w3-pkg-1.15/man/w3/w3.txi	Sat Nov 27 16:37:21 1999
-+++ xemacs-w3-pkg-1.15.new/man/w3/w3.txi	Sun Mar 26 15:12:13 2000
+
+--- a/man/w3/w3.txi	2018-07-29 12:01:46.000000000 +0200
++++ b/man/w3/w3.txi	2026-03-15 22:16:35.820878404 +0100
 @@ -11,7 +11,7 @@
  @c retrieve dvi, postscript, and PDF versions from the web site or FTP 
  @c site: http://www.cs.indiana.edu/elisp/w3/docs.html
  @c
 -@setfilename w3.info
 +@setfilename ../../info/w3.info
- @settitle Emacs/W3 v4.0pre.46 User's Manual
+ @settitle Emacs/W3 v4.0pre.47 User's Manual
  @iftex
  @c @finalout
-@@ -24,11 +24,19 @@
+@@ -24,11 +24,16 @@
  @end tex
  @synindex cp fn
  @synindex vr fn
 -@dircategory World Wide Web
 -@dircategory GNU Emacs Lisp
 +
-+
 +@ifinfo
 +@format
 +@dircategory XEmacs Editor:
  @direntry
 -* Emacs/W3: (w3).                 Emacs/W3 World Wide Web browser.
-+* Emacs/W3: (w3).                 	Emacs/W3 World Wide Web browser.
++* Emacs/W3: (w3).	Emacs/W3 World Wide Web browser.
  @end direntry
 +@end format
 +@end ifinfo
 +
-+
-+
- @ifinfo
- This file documents the Emacs/W3 World Wide Web browser.
  
+ @copying
+ @end copying
